@@ -1,0 +1,104 @@
+body {
+  font-family: "Comic Sans MS", cursive;
+}
+
+#header {
+  text-align: center;
+  border: 6px solid yellow;
+}
+
+#nav {
+  background-color: blue;
+  border: 2px solid black;
+  width: 700px;
+}
+
+#nav a {
+  color: yellow;
+  margin-right: 15px;
+}
+
+#nav a:hover {
+  color: red;
+}
+
+#main {
+  border: 3px double black;
+  margin-left: 60px;
+  width: 750px;
+}
+
+#sidebar {
+  float: right;
+  width: 180px;
+  background-color: silver;
+  color: black;
+}
+
+.pic-left {
+  float: left;
+}
+
+.pic-right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+td, th {
+  border: 1px solid black;
+}
+
+.basketball-page {
+  background-color: orange;
+  color: purple;
+}
+
+.gym-page {
+  background-color: lime;
+  color: red;
+}
+
+.coding-page {
+  background-color: black;
+  color: lime;
+}
+
+.shows-page {
+  background-color: navy;
+  color: yellow;
+}
+
+.games-page {
+  background-color: silver;
+  color: red;
+}
+
+@media (max-width: 600px) {
+  #nav, #main {
+    width: auto;
+    margin-left: 0px;
+  }
+
+  #nav a {
+    display: block;
+    text-align: center;
+  }
+
+  #sidebar {
+    float: none;
+    width: auto;
+  }
+
+  .pic-left, .pic-right {
+    float: none;
+  }
+
+  img, video {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
+}
